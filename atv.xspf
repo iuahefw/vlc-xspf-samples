@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+	<title>atv</title>
+	<trackList>
+		<track>
+			<location>v4l2:///dev/video0</location>
+			<title>1</title>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+			<vlc:id>1</vlc:id>
+			<vlc:option>v4l2-standard=NTSC</vlc:option>
+			<vlc:option>v4l2-tuner-frequency=175250</vlc:option>
+			<vlc:option>v4l2-width=720</vlc:option>
+			<vlc:option>v4l2-height=576</vlc:option>
+			<vlc:option>live-caching=100</vlc:option>
+			<vlc:option>v4l2-tuner-audio-mode=0</vlc:option>
+			<vlc:option>v4l2-band-stop-filter=1</vlc:option>
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+			<vlc:item tid="1"/>
+	</extension>
+</playlist>
